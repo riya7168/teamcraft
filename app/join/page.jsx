@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { createClient, isSupabaseConfigured } from "../../lib/supabase/client";
+import DarkModeToggle from "../../components/DarkModeToggle";
 
 export default function JoinProjectPage() {
   const router = useRouter();
@@ -47,7 +48,7 @@ export default function JoinProjectPage() {
 
   return <main className="invite-page">
     <Link href="/" className="brand public-brand"><span className="brand-mark"><span>t</span></span><span>teamcraft</span></Link>
-    <form className="invite-card" onSubmit={submit}>
+    <div className="invite-theme-control"><DarkModeToggle /></div><form className="invite-card" onSubmit={submit}>
       <div className="feature-icon">✳</div>
       <span className="section-eyebrow">TEAMCRAFT INVITATION</span>
       <h1>Join a project</h1>

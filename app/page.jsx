@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JoinWithCode from "./JoinWithCode";
+import DarkModeToggle from "../components/DarkModeToggle";
 
 const features = [
   { number: "01", title: "Know what your team needs", text: "Turn project goals into a clear picture of the skills, interests, and time your team needs." },
@@ -9,7 +10,7 @@ const features = [
 
 export default function HomePage() {
   return <main className="public-page">
-    <header className="public-nav"><Link href="/" className="brand public-brand"><span className="brand-mark"><span>t</span></span><span>teamcraft</span></Link><nav><a href="#how-it-works">How it works</a><a href="#why-teamcraft">Why Teamcraft</a></nav><div className="public-nav-actions"><Link href="/login" className="sign-in-link">Sign in</Link><Link href="/login?mode=signup" className="button button-dark">Create your workspace <span>→</span></Link></div></header>
+    <header className="public-nav"><Link href="/" className="brand public-brand"><span className="brand-mark"><span>t</span></span><span>teamcraft</span></Link><nav><a href="#how-it-works">How it works</a><a href="#why-teamcraft">Why Teamcraft</a></nav><div className="public-nav-actions"><Link href="/login" className="sign-in-link">Sign in</Link><Link href="/login?mode=signup" className="button button-dark">Create your workspace <span>→</span></Link><DarkModeToggle /></div></header>
     <section className="hero-section"><div className="hero-copy"><div className="hero-kicker"><span>✳</span> A better way to work together</div><h1>Build teams around<br /><em>what people bring.</em></h1><p>Great projects begin with the right mix of skills, interests, and time. Teamcraft helps you find that mix, then keeps the work clear for everyone.</p><div className="hero-actions"><Link href="/login?mode=signup" className="button button-dark hero-cta">Build your team <span>→</span></Link><a href="#how-it-works" className="hero-secondary">See how it works <span>↓</span></a></div><JoinWithCode /><div className="hero-proof"><div className="proof-avatars"><i>MP</i><i>EB</i><i>SC</i><i>NW</i></div><span>Made for teams that do good work together</span></div></div>
       <div className="hero-art" aria-label="Illustration of a balanced project team"><div className="art-orbit orbit-one"></div><div className="art-orbit orbit-two"></div><div className="art-center"><div className="art-spark">✳</div><b>Good work<br />is a team effort.</b><span>Skills · Interests · Time</span></div><div className="art-person art-person-one"><i>MP</i><b>Maya</b><small>Design</small></div><div className="art-person art-person-two"><i>EB</i><b>Ethan</b><small>Engineering</small></div><div className="art-person art-person-three"><i>SC</i><b>Sofia</b><small>Research</small></div><div className="art-person art-person-four"><i>NW</i><b>Noah</b><small>Data</small></div><div className="art-note"><span>↗</span> 31 hrs / week<br /><small>shared capacity</small></div></div>
     </section>

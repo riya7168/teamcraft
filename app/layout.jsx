@@ -1,4 +1,6 @@
 import "./globals.css";
+import SessionTimeout from "../components/SessionTimeout";
+import MouseInteraction from "../components/MouseInteraction";
 
 export const metadata = {
   title: "Teamcraft — Build better teams",
@@ -6,5 +8,5 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return <html lang="en"><body>{children}</body></html>;
+  return <html lang="en" data-scroll-behavior="smooth"><body><SessionTimeout /><MouseInteraction />{children}</body></html>;
 }
