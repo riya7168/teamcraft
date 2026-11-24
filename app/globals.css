@@ -507,6 +507,17 @@ html[data-theme="dark"] .auth-quote>span,html[data-theme="dark"] .demo-note>span
 .auth-password-field .password-wrap button.password-visibility-toggle:hover{background:#f1f7f2;color:#286b57}
 body.has-interactive-mouse .auth-card,body.has-interactive-mouse .auth-card.is-3d-active{transform:none!important;transition:box-shadow .2s ease!important}
 body.has-interactive-mouse .auth-card button:hover,body.has-interactive-mouse .auth-card button:active{scale:1!important;transform:none!important}
+.auth-divider{display:flex;align-items:center;gap:12px;margin:16px 0;color:#8b958f;font-size:11px}
+.auth-divider::before,.auth-divider::after{content:"";height:1px;flex:1;background:#e7ece8}
+.google-auth-button{width:100%;min-height:44px;display:flex;align-items:center;justify-content:center;gap:10px;border:1px solid #dfe5e1;border-radius:7px;background:#fff;color:#29332e;font-size:13px;font-weight:700;transition:background-color .18s,border-color .18s,box-shadow .18s}
+.google-auth-button svg{width:18px;height:18px;flex:0 0 auto}
+.google-auth-button:hover:not(:disabled){background:#f8faf9;border-color:#bbc7c0}
+.google-auth-button:focus-visible{outline:0;border-color:#a78bfa;box-shadow:0 0 0 3px #a78bfa40}
+.google-auth-button:disabled{opacity:.65;cursor:wait}
+html[data-theme="dark"] .auth-divider{color:#98a6bd}
+html[data-theme="dark"] .auth-divider::before,html[data-theme="dark"] .auth-divider::after{background:#303b54}
+html[data-theme="dark"] .google-auth-button{background:#10182a;border-color:#3a4760;color:#e8ecf5}
+html[data-theme="dark"] .google-auth-button:hover:not(:disabled){background:#20243b;border-color:#596782}
 /* Workspace dark-mode cleanup: use cool slate for secondary copy and controls. */
 html[data-theme="dark"] .app-shell .workspace-label,html[data-theme="dark"] .app-shell .nav-label,html[data-theme="dark"] .app-shell .workspace-name small,html[data-theme="dark"] .app-shell .breadcrumbs,html[data-theme="dark"] .app-shell .breadcrumbs span,html[data-theme="dark"] .app-shell .project-meta,html[data-theme="dark"] .app-shell .project-meta span,html[data-theme="dark"] .app-shell .stat-top,html[data-theme="dark"] .app-shell .stat-note,html[data-theme="dark"] .app-shell .github-repo-summary,html[data-theme="dark"] .app-shell .github-repo-summary span,html[data-theme="dark"] .app-shell .github-activity-row span,html[data-theme="dark"] .app-shell .candidate-details>span,html[data-theme="dark"] .app-shell .candidate-fit>span,html[data-theme="dark"] .app-shell .candidate-fit small,html[data-theme="dark"] .app-shell .match-person small,html[data-theme="dark"] .app-shell .task-meta,html[data-theme="dark"] .app-shell .task-card p{color:#a9b5c9}
 html[data-theme="dark"] .app-shell .tabs button,html[data-theme="dark"] .app-shell .project-link,html[data-theme="dark"] .app-shell .nav-item:not(.selected),html[data-theme="dark"] .app-shell .icon-button{color:#b9c5d8}
